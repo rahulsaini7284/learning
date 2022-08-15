@@ -11,6 +11,7 @@ import transactionRoutes from "./routes/transactionRoutes.js";
 import dashboardRoutes from "./routes/dashboardRoutes.js";
 import cors from "cors";
 import { hasTokenExpired } from "./middlewares/authMiddleware.js";
+import subCategoryRoute from "./routes/subCategoryRoutes.js";
 // import morgan from "morgan";
 
 const app = express();
@@ -27,6 +28,7 @@ app.use("/products", productRoutes);
 app.use("/categories", categoryRoute);
 app.use("/transactions", transactionRoutes);
 app.use("/dashboard", dashboardRoutes);
+app.use("/sub_Category", subCategoryRoute);
 
 app.listen(process.env.PORT, () => {
   console.log(`Server running on port ${process.env.PORT}`);

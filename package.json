@@ -1,0 +1,22 @@
+{
+  "name": "ankushsir",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon be-test/server",
+    "client":"npm run dev --prefix vite-project",
+    "dev":"concurrently \"npm run start\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahulsaini7284/learning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahulsaini7284/learning/issues"
+  },
+  "homepage": "https://github.com/rahulsaini7284/learning#readme"
+}

@@ -6,6 +6,7 @@ const ProducSchema = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: "categories",
     },
+    type: {},
     material: { type: String, minlength: 3, maxlength: 50 },
     color: { type: String, minlength: 3, maxlength: 50 },
     price: { type: String, minlength: 3, maxlength: 50, required: true },
